@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/77690ac7-4956-4c8b-b70c-379591fd17bb/AppServices/subscriptions/77690ac7-4956-4c8b-b70c-379591fd17bb/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/fpecommunity",
+    "appService.deploySubpath": "."
+}
