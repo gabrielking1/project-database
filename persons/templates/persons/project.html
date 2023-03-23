@@ -33,6 +33,7 @@
                      <th>Faculty</th>
                      <th>Date Submitted</th>
                      <th>File</th>
+                     <th>Source Code </th>
                      <th>Actions</th>
                  </tr>
              </thead>
@@ -49,6 +50,10 @@
                      <td>{{order.department}}</td>
                      <td>{{order.faculty}}</td>
                      <td>{{order.date}}</td>
+                     <td>{{order.source_code}}
+                      {% comment %} <br>
+                    <a href = "{{order.source_code.url}}"> save</a> {% endcomment %}
+                     </td>
                      <td>{{order.file}}<br>
                     <a href = "{{order.file.url}}"> save</a></td>
                      <td class="info"> <a href="{% url 'update' order.id %}" style="display:inline;margin:3px">

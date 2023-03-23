@@ -26,7 +26,7 @@ SECRET_KEY = '8ajn-#6xp1+i0mtg$8la_@_t=10rbhs$1j8(po67&c3*kvvo%g'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['fpecommunity.azurewebsites.net']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition

@@ -33,6 +33,7 @@ class Student(models.Model):
     level = models.CharField(max_length=4, choices=LevelChoices.choices)
     date = models.DateField(auto_now = True)
     file = models.FileField(upload_to='documents/')
+    source_code = models.FileField(upload_to = "source/")
     name = models.CharField(max_length=124)
     faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE)
     department = models.ForeignKey(Department, on_delete=models.CASCADE)

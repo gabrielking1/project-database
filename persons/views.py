@@ -59,7 +59,7 @@ def add(request):
         return render(request, 'persons/home.html', {'form': form})
     else:
         messages.error(request,'you aint authorized ')
-        return HttpResponse("na you no ooo")
+        return HttpResponse("You are not Authorized")
 
 
 
@@ -163,6 +163,10 @@ def signin(request):
         if user is not None:
             if user.is_superuser:
                 auth.login(request, user)
+                
+                # to redirect admin to django admin page
+
+                # return HttpResponseRedirect('/admin/')
                 return redirect('projects')
             else:
                 auth.login(request, user)

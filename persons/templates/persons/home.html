@@ -32,6 +32,9 @@ width: 50%; !important">
 
     {{form.file.label_tag}}
     {% render_field form.file class+="form-control" %}
+
+    {{form.source_code.label_tag}}
+    {% render_field form.source_code class+="form-control" %}
     
     <label for="course">Faculty</label>
 {% render_field form.faculty class+="form-control" hx-get="/module" hx-target="#id_modules"  %}
