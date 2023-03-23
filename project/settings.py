@@ -40,14 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'persons',
     'django_filters',
-    'widget_tweaks',
+    
     'crispy_forms',
-    'crispy_bootstrap5',
-    'django_mail_admin',
+    
+   
     
 ]
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 MIDDLEWARE = [
